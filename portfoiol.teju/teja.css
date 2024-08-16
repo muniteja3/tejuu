@@ -1,0 +1,314 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
+
+/* Body Background */
+body {
+    background-image: url(banner.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    color: #a39a9a; /* Default text color */
+}
+
+/* Header and Navbar */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+}
+
+/* Align Navbar to the Right */
+.navbar {
+    display: flex;
+    justify-content: flex-end; /* Align to the right */
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Shadow for better visibility */
+}
+
+.navbar li {
+    margin-left: 20px;
+}
+
+.navbar a {
+    color: #FFFFFF; /* White text for links */
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #00E0FF; /* Neon Blue on hover */
+    color: #000000; /* Black text on hover */
+    border-radius: 5px;
+}
+
+/* Profile Image *//* Profile Image */
+.profile-image-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-image {
+    width: 320px; /* Adjust width to match the neon circle */
+    height: 320px; /* Adjust height to match the neon circle */
+    border-radius: 50%;
+    border: 4px solid #00bcd4; /* Optional border for styling */
+    box-shadow: 0 0 20px #00E0FF; /* Add glow effect matching neon circle */
+}
+
+
+/* Additional Center Content Adjustment */
+.center-content {
+    margin-top: 80px; /* Adjust this to align with the neon circle */
+    text-align: center;
+    color: white;
+}
+
+/* Name Section */
+.name {
+    font-size: 3em;
+    font-family: 'Cambria', serif;
+    margin-bottom: 30px;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); /* Subtle text shadow */
+}
+
+.name span {
+    opacity: 0;
+    display: inline-block;
+    animation: fadeInLetter 0.5s forwards;
+}
+
+@keyframes fadeInLetter {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Bio Section */
+.bio {
+    font-size: 1.2em;
+    margin-top: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
+    color: #D3D3D3; /* Light gray for bio text */
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); /* Subtle text shadow */
+}
+
+/* Additional styling remains the same */
+/* Skills Section */
+.skills-section {
+    padding: 20px;
+    max-width: 800px;
+    margin: 50px auto 0 auto;
+    text-align: center;
+}
+
+.skills-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #FFFFFF; /* White for headings */
+}
+
+.skill {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.skill-name {
+    font-size: 1.2em;
+    color: #FFFFFF; /* White for skill names */
+}
+
+.skill-bar {
+    background-color: #FFFFFF; /* White background for skill bars */
+    border-radius: 25px;
+    overflow: hidden;
+    height: 20px;
+    margin-top: 5px;
+}
+
+.skill-percentage {
+    background-color: #00E0FF; /* Neon Blue for skill percentage bar */
+    height: 100%;
+    text-align: right;
+    padding-right: 10px;
+    line-height: 20px;
+    color: #000000; /* Black text on skill percentage */
+    border-radius: 25px;
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 20px;
+    max-width: 800px;
+    margin: 50px auto 0 auto;
+    text-align: center;
+}
+
+.projects-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #FFFFFF; /* White for headings */
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white for project background */
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.project h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #00E0FF; /* Neon Blue for project titles */
+}
+
+.project p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #D3D3D3; /* Light gray for project descriptions */
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    background-color: #FF007F; /* Bright Pink for buttons */
+    color: #000000; /* Black text on buttons */
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #00E0FF; /* Neon Blue on hover */
+    color: #FFFFFF; /* White text on hover */
+}
+
+/* Contact Section */
+/* Contact Section */
+.contact-section {
+    padding: 20px;
+    max-width: 600px;
+    margin: 50px auto 0 auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background to make the section stand out */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    box-shadow: 0 0 15px rgba(0, 224, 255, 0.7); /* Neon blue shadow to match the theme */
+}
+
+.contact-form {
+    text-align: left; /* Align text within the form */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #FFFFFF; /* White for form labels */
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #00E0FF; /* Neon Blue border */
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: #FFFFFF; /* White text color */
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    border-color: #FF007F; /* Bright Pink focus border */
+    outline: none;
+}
+
+button[type="submit"] {
+    background-color: #FF007F; /* Bright Pink for buttons */
+    color: #000000; /* Black text on buttons */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: block;
+    margin: 0 auto; /* Center the button */
+}
+
+button[type="submit"]:hover {
+    background-color: #00E0FF; /* Neon Blue on hover */
+    color: #FFFFFF; /* White text on hover */
+}
+
+/* Social Media and Resume Section */
+.social-resume-section {
+    text-align: center;
+    margin: 50px auto; /* Center and add spacing */
+    max-width: 600px; /* Match with the contact section width */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 15px rgba(0, 224, 255, 0.7); /* Neon blue shadow */
+}
+
+.social-icons {
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    font-size: 2em;
+    color: #FFFFFF; /* White for social icons */
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #00E0FF; /* Neon Blue on hover */
+}
+
+.resume-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #FF007F; /* Bright Pink for resume button */
+    color: #000000; /* Black text on resume button */
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 0 auto; /* Center the button */
+}
+
+.resume-button:hover {
+    background-color: #00E0FF; /* Neon Blue on hover */
+    color: #FFFFFF; /* White text on hover */
+}
